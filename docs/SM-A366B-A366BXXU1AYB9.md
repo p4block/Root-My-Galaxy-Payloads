@@ -104,12 +104,14 @@ skb_shared_info: size 320 (0x140)
 ```
 
 The `rt_mutex_waiter` layout is the expanded 6.6 form identical to the A366W
-sibling. Because `sizeof(struct skb_shared_info) == 320`,
-`SKB_MAX_HEAD(0)` is `0xec0` and the 64 KiB `unix_stream_sendmsg` first
-order-3 fragment begins at source offset `0x1000`:
+sibling. The skb fragment geometry follows the device-tested same-SoC A366W
+profile: the first order-3 fragment of a 64 KiB `unix_stream_sendmsg` send
+begins at source offset `0xe80` on this platform (the `-0x1000` derivation
+from the 6.1 S928U1 procedure does not apply to this 6.6 kernel and caused a
+kernel panic during hardware validation):
 
 ```c
-#define SKB_DATA_DELTA (-0x1000LL)
+#define SKB_DATA_DELTA (-0xe80LL)
 ```
 
 ## Physical load addresses
