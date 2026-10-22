@@ -211,6 +211,24 @@
       }
     },
     {
+      "payloadId": "a36xq-A366BXXU1AYB9",
+      "displayName": "Galaxy A36 5G (EU) | Kernel 6.6.46",
+      "models": [
+        "SM-A366B"
+      ],
+      "kernelVersions": [
+        "6.6.46"
+      ],
+      "exploit": {
+        "url": "https://raw.githubusercontent.com/p4block/Root-My-Galaxy-Payloads/main/artifacts/a36xq-A366BXXU1AYB9/cve-2026-43499-app.so",
+        "size": 104128
+      },
+      "kernelsu": {
+        "url": "https://raw.githubusercontent.com/p4block/Root-My-Galaxy-Payloads/main/kernelsu/ksud-A366BXXU1AYB9-kdp",
+        "size": 4861088
+      }
+    },
+    {
       "payloadId": "dm3q-S918BXXSAFZF5",
       "displayName": "Galaxy S23 Ultra SM-S918B | Kernel 5.15.189 (S918BXXSAFZF5)",
       "models": ["SM-S918B"],
