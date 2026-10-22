@@ -143,13 +143,15 @@ SoC/kernel characteristics rather than firmware-specific values.
 
 ## Build results
 
-Payload release build (`API=33`, NDK r25) produces the exact 104,128-byte
-release artifact:
+Payload build (`API=33`, NDK r25): the plain `APP_PRELOAD` `-O2` build, same
+recipe as the device-proven A366W artifact (the `-Oz` release truncation
+changes code timing; on hardware it completed the PI choreography but never
+opened the write window):
 
 ```text
 artifacts/a36xq-A366BXXU1AYB9/cve-2026-43499-app.so
-size: 104128
-SHA-256: 2e631887db8feadd7c1e3aff3eef827896e0cf1a99d71a8dbffc6eb47d372e69
+size: 129992
+SHA-256: b7caec4f2f52447272b4b5681101075714f70e157ec35f4e6a29e3ece65f5d28
 ```
 
 KernelSU v3.2.5 + `KernelSU-v3.2.5-samsung-kdp-rkp-defex.patch`, built with
