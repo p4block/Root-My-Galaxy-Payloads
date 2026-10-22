@@ -85,7 +85,7 @@ next instruction at `0xffffffc0800d8bbc`.
 ## Layout values (target BTF)
 
 ```text
-file_operations: size 0x110; unlocked_ioctl 0x48; compat_ioctl 0x50;
+file_operations: size 0x108; unlocked_ioctl 0x48; compat_ioctl 0x50;
   mmap 0x58; open 0x68; release 0x78; splice_read 0xb8; show_fdinfo 0xd8
 task_struct: usage 0x40; prio 0x84; normal_prio 0x8c;
   sched_task_group 0x348; pi_lock 0x90c; pi_waiters 0x920;
