@@ -147,7 +147,7 @@ release artifact:
 ```text
 artifacts/a36xq-A366BXXU1AYB9/cve-2026-43499-app.so
 size: 104128
-SHA-256: fbfb8d5343a6654fc45b6f70de69cd09afdcf54cb2eb825b6ab78872df7f92c4
+SHA-256: 2e631887db8feadd7c1e3aff3eef827896e0cf1a99d71a8dbffc6eb47d372e69
 ```
 
 KernelSU v3.2.5 + `KernelSU-v3.2.5-samsung-kdp-rkp-defex.patch`, built with
